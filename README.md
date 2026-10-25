@@ -24,6 +24,10 @@ Elemen yang digunakan:
 
 **Hasil yang diharapkan:** Tiga kotak berwarna merah, kuning, dan hijau muncul sejajar karena masing-masing elemen diberi CSS float.
 
+**Pratinjau hasil halaman di browser:**
+
+![Hasil Box Element](screenshots/hasil-browser/01-box-element.png)
+
 ## Langkah 2 — Menerapkan CSS Float Property
 
 **Tujuan:** Membuat elemen mengambang ke sisi kiri menggunakan `float: left`.
@@ -41,6 +45,8 @@ Pada file `lab4_box.html`, deklarasi CSS memberi `padding: 10px` dan warna latar
 Class `.div4` menggunakan `clear: left` dan `float: none`. Coba ganti nilai `clear` menjadi `both` atau `right`, lalu amati perbedaannya.
 
 **Hasil yang diharapkan:** Div 4 tampil di bawah kotak-kotak yang menggunakan float.
+
+Lihat pratinjau Box Element di atas untuk hasil kotak dan susunan elemen.
 
 ## Langkah 4 — Membuat Kerangka Layout Sederhana
 
@@ -74,6 +80,8 @@ Navigasi menggunakan latar biru. Link menu diberi padding, warna teks putih, dan
 
 **Hasil yang diharapkan:** Menu tampil sebagai baris navigasi biru dan hero tampil sebagai panel pengantar di bawahnya.
 
+![Hasil halaman Home](screenshots/hasil-browser/02-home.png)
+
 ## Langkah 7 — Mengatur Main Content, Sidebar, dan Widget
 
 Bagian `#wrapper` menempatkan konten utama dan sidebar berdampingan. Sidebar berisi widget daftar tautan dan widget teks. CSS juga mengatur jarak, border, warna judul widget, dan efek hover pada tautan.
@@ -92,13 +100,23 @@ File: `lab4_layout/about.html`
 
 Halaman About berisi deskripsi singkat, daftar materi/keahlian yang dipelajari, dan portfolio sederhana. Halaman ini menggunakan stylesheet yang sama agar tampilannya konsisten dengan halaman Home.
 
+![Hasil halaman About](screenshots/hasil-browser/04-about.png)
+
 ## Langkah 10 — Membuat Halaman Contact
 
 File: `lab4_layout/kontak.html`
 
 Form Contact berisi input Nama, Email, Subjek, dan Pesan. Atribut `required` dan `type="email"` membantu validasi dasar dari browser. Form ini belum terhubung ke backend, jadi belum benar-benar mengirim data.
 
+![Hasil halaman Contact](screenshots/hasil-browser/05-kontak.png)
+
 ![Potongan kode halaman About dan Contact](screenshots/08-about-contact.png)
+
+## Pratinjau Halaman Artikel
+
+Halaman Artikel berisi ringkasan materi Box Model, Float dan Clear, serta HTML Semantik.
+
+![Hasil halaman Artikel](screenshots/hasil-browser/03-artikel.png)
 
 ## Langkah 11 — Pengujian Halaman
 
@@ -137,4 +155,4 @@ Praktikum ini melatih penggunaan box element, `float`, `clear`, elemen semantik 
 
 ## Catatan Screenshot
 
-Gambar pada README ini adalah **ilustrasi potongan kode yang dirapikan dari project**, bukan screenshot asli layar editor. Tambahkan screenshot browser/VS Code hasil eksekusi sendiri sebelum mengumpulkan laporan jika diwajibkan dosen.
+Gambar kode pada folder `screenshots` adalah ilustrasi potongan kode yang dirapikan. Gambar pada `screenshots/hasil-browser/` adalah pratinjau halaman yang dirender dari file project untuk memperlihatkan hasil layout; gambar tersebut bukan foto/screenshot asli dari layar komputer pengguna. Jika dosen meminta bukti praktikum asli, tambahkan screenshot langsung dari browser dan VS Code sebelum mengumpulkan laporan.
