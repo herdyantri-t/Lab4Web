@@ -1,143 +1,117 @@
 # Lab4Web — Laporan Praktikum 4: CSS Layout
 
-README ini disusun mengikuti urutan materi pada **Modul Praktikum Pemrograman Web — Praktikum 4: CSS Layout**. Gambar yang disertakan merupakan ilustrasi potongan kode dari file project, bukan screenshot yang diambil langsung dari VS Code atau browser. Untuk laporan final, tambahkan screenshot hasil tampilan browser dari komputer sendiri jika dosen meminta bukti eksekusi.
+README ini mengikuti urutan materi pada **Modul Praktikum Pemrograman Web, Praktikum 4: CSS Layout**. Setiap bagian dilengkapi gambar **hasil tampilan** tahap tersebut. Tidak ada screenshot kode pada dokumentasi ini.
+
+> **Catatan:** gambar pada `screenshots/hasil-praktikum/` adalah ilustrasi visual hasil tiap tahap berdasarkan project. Untuk laporan yang mensyaratkan bukti eksekusi langsung, tambahkan screenshot browser dari laptop sendiri.
 
 ## Persiapan Praktikum
 
-1. Siapkan editor kode, misalnya Visual Studio Code.
-2. Buka folder `Lab4Web` di VS Code.
-3. File latihan box ada di `lab4_box.html`; file layout ada di folder `lab4_layout`.
-4. Buka file HTML di browser atau gunakan ekstensi Live Server.
+1. Siapkan Visual Studio Code atau editor teks lain.
+2. Buka folder `Lab4Web`.
+3. Jalankan file HTML dengan browser atau ekstensi Live Server.
 
-## Langkah 1 — Membuat Dokumen HTML dan Box Element
+## Langkah 1 — Membuat Box Element
 
-**Tujuan:** Membuat halaman dasar dengan judul dan tiga elemen `div`.
+File: `lab4_box.html`. Tiga kotak `div` dibuat dengan padding dan warna latar berbeda.
 
-File: `lab4_box.html`
+![Hasil Box Element](screenshots/hasil-praktikum/01-box-element.png)
 
-Elemen yang digunakan:
-- `header` untuk judul halaman.
-- `section` untuk mengelompokkan kotak.
-- `div` dengan class `div1`, `div2`, dan `div3` sebagai box.
+## Langkah 2 — CSS Float dan Clear
 
-![Potongan kode Box Element](screenshots/01-box-element.png)
+`float: left` menempatkan tiga div pertama berdampingan. Div 4 menggunakan `clear: left` agar turun ke baris berikutnya.
 
-**Hasil yang diharapkan:** Tiga kotak berwarna merah, kuning, dan hijau muncul sejajar karena masing-masing elemen diberi CSS float.
+![Hasil Float dan Clear](screenshots/hasil-praktikum/01-box-element.png)
 
-**Pratinjau hasil halaman di browser:**
+## Langkah 3 — Membuat Kerangka Layout Semantik
 
-![Hasil Box Element](screenshots/hasil-browser/01-box-element.png)
+Layout terdiri dari `header`, `nav`, hero section, area `main`, `aside` untuk sidebar, dan `footer`.
 
-## Langkah 2 — Menerapkan CSS Float Property
+![Hasil kerangka layout](screenshots/hasil-praktikum/02-kerangka-layout.png)
 
-**Tujuan:** Membuat elemen mengambang ke sisi kiri menggunakan `float: left`.
+## Langkah 4 — Membuat Header
 
-Pada file `lab4_box.html`, deklarasi CSS memberi `padding: 10px` dan warna latar yang berbeda pada masing-masing kotak.
+Header berisi judul Layout Sederhana dan diatur dengan padding serta warna teks.
 
-![Potongan kode Float dan Clear](screenshots/02-float-clear.png)
+![Hasil header](screenshots/hasil-praktikum/03-header.png)
 
-**Hasil yang diharapkan:** Div 1, Div 2, dan Div 3 berada pada satu baris selama ruang mencukupi.
+## Langkah 5 — Membuat Navigasi
 
-## Langkah 3 — Mengatur Clear pada Elemen Berikutnya
+Navigasi berisi Home, Artikel, About, dan Kontak. Link aktif diberi warna biru yang lebih terang.
 
-**Tujuan:** Mempraktikkan properti `clear` agar elemen berikutnya turun ke baris baru.
+![Hasil navigasi](screenshots/hasil-praktikum/04-navigasi.png)
 
-Class `.div4` menggunakan `clear: left` dan `float: none`. Coba ganti nilai `clear` menjadi `both` atau `right`, lalu amati perbedaannya.
+## Langkah 6 — Membuat Hero Panel
 
-**Hasil yang diharapkan:** Div 4 tampil di bawah kotak-kotak yang menggunakan float.
+Hero panel berisi judul, deskripsi, dan tombol Learn more.
 
-Lihat pratinjau Box Element di atas untuk hasil kotak dan susunan elemen.
+![Hasil hero panel](screenshots/hasil-praktikum/05-hero-panel.png)
 
-## Langkah 4 — Membuat Kerangka Layout Sederhana
+## Langkah 7 — Mengatur Main Content dan Sidebar
 
-**Tujuan:** Menyusun bagian utama website dengan elemen HTML semantik sesuai materi.
+Area wrapper membagi halaman menjadi konten utama di kiri dan sidebar di kanan.
 
-File: `lab4_layout/home.html`
+![Hasil main content dan sidebar](screenshots/hasil-praktikum/06-main-sidebar.png)
 
-Struktur layout terdiri dari:
-- `header` — judul website.
-- `nav` — menu navigasi Home, Artikel, About, dan Kontak.
-- `section#hero` — panel pengantar.
-- `main#main` — konten utama.
-- `aside#sidebar` — widget samping.
-- `footer` — bagian bawah halaman.
+## Langkah 8 — Membuat Sidebar Widget
 
-![Potongan kode kerangka layout](screenshots/03-layout-semantic.png)
+Sidebar berisi Widget Header berupa daftar tautan dan Widget Text untuk informasi tambahan.
 
-## Langkah 5 — Mengatur CSS Dasar dan Header
+![Hasil sidebar widget](screenshots/hasil-praktikum/07-sidebar-widget.png)
 
-File: `lab4_layout/style.css`
+## Langkah 9 — Mengatur Footer
 
-CSS reset menyamakan margin dan padding awal. Bagian `body` mengatur font dan warna teks, sedangkan `#container` mengatur lebar konten, posisi tengah, latar, dan bayangan. Header diberi padding dan warna teks judul.
+Footer ditempatkan di bagian bawah halaman dengan latar gelap dan teks terang.
 
-![Potongan kode CSS dasar](screenshots/04-css-base.png)
+![Hasil footer](screenshots/hasil-praktikum/08-footer.png)
 
-## Langkah 6 — Membuat Navigasi dan Hero Panel
+## Langkah 10 — Menambahkan Kartu Konten
 
-Navigasi menggunakan latar biru. Link menu diberi padding, warna teks putih, dan efek hover. Hero panel menggunakan latar abu-abu, jarak dalam, judul, deskripsi, dan tombol menuju halaman About.
+Tiga kartu berisi ilustrasi, judul, deskripsi, dan tombol detail.
 
-![Potongan kode navigasi dan hero](screenshots/05-navigation-hero.png)
+![Hasil kartu konten](screenshots/hasil-praktikum/09-kartu-konten.png)
 
-**Hasil yang diharapkan:** Menu tampil sebagai baris navigasi biru dan hero tampil sebagai panel pengantar di bawahnya.
+## Langkah 11 — Menambahkan Content Artikel
 
-![Hasil halaman Home](screenshots/hasil-browser/02-home.png)
+Dua artikel menggunakan elemen `article`. Gambar artikel pertama berada di kiri dan gambar artikel kedua berada di kanan.
 
-## Langkah 7 — Mengatur Main Content, Sidebar, dan Widget
+![Hasil artikel](screenshots/hasil-praktikum/10-artikel.png)
 
-Bagian `#wrapper` menempatkan konten utama dan sidebar berdampingan. Sidebar berisi widget daftar tautan dan widget teks. CSS juga mengatur jarak, border, warna judul widget, dan efek hover pada tautan.
+## Langkah 12 — Tampilan Home Lengkap
 
-![Potongan kode main content dan sidebar](screenshots/06-main-sidebar.png)
+Halaman utama menggabungkan header, navigasi, hero, kartu konten, artikel, sidebar, dan footer.
 
-## Langkah 8 — Menambahkan Kartu Konten dan Artikel
+![Hasil Home](screenshots/hasil-praktikum/11-home-final.png)
 
-Halaman Home memiliki tiga kartu materi, kemudian artikel yang menjelaskan CSS Layout dan HTML semantik. Gambar pada artikel diatur menggunakan float agar teks dapat mengalir di samping gambar.
+## Langkah 13 — Halaman Artikel
 
-![Potongan kode konten dan artikel](screenshots/07-content-article.png)
+Halaman Artikel memuat ringkasan materi CSS Layout dan HTML semantik.
 
-## Langkah 9 — Membuat Halaman About
+![Hasil halaman Artikel](screenshots/hasil-praktikum/12-artikel-page.png)
 
-File: `lab4_layout/about.html`
+## Langkah 14 — Halaman About
 
-Halaman About berisi deskripsi singkat, daftar materi/keahlian yang dipelajari, dan portfolio sederhana. Halaman ini menggunakan stylesheet yang sama agar tampilannya konsisten dengan halaman Home.
+Halaman About berisi deskripsi, keahlian yang dipelajari, dan portfolio sederhana.
 
-![Hasil halaman About](screenshots/hasil-browser/04-about.png)
+![Hasil halaman About](screenshots/hasil-praktikum/13-about-page.png)
 
-## Langkah 10 — Membuat Halaman Contact
+## Langkah 15 — Halaman Contact
 
-File: `lab4_layout/kontak.html`
+Form Contact berisi Nama, Email, Subjek, dan Pesan. Form ini berupa tampilan HTML dan belum terhubung ke backend.
 
-Form Contact berisi input Nama, Email, Subjek, dan Pesan. Atribut `required` dan `type="email"` membantu validasi dasar dari browser. Form ini belum terhubung ke backend, jadi belum benar-benar mengirim data.
+![Hasil halaman Contact](screenshots/hasil-praktikum/14-contact-page.png)
 
-![Hasil halaman Contact](screenshots/hasil-browser/05-kontak.png)
+## Langkah 16 — Pengujian dan Validasi
 
-![Potongan kode halaman About dan Contact](screenshots/08-about-contact.png)
-
-## Pratinjau Halaman Artikel
-
-Halaman Artikel berisi ringkasan materi Box Model, Float dan Clear, serta HTML Semantik.
-
-![Hasil halaman Artikel](screenshots/hasil-browser/03-artikel.png)
-
-## Langkah 11 — Pengujian Halaman
-
-1. Buka `lab4_box.html` di browser dan amati posisi Div 1 sampai Div 4.
+1. Buka `lab4_box.html` dan amati posisi Div 1–4.
 2. Buka `lab4_layout/home.html`.
-3. Klik menu Artikel, About, dan Kontak untuk memastikan semua halaman dapat dibuka.
-4. Uji form Contact dengan mengosongkan kolom wajib dan perhatikan validasi browser.
-5. Ubah ukuran jendela browser untuk memeriksa tampilan responsif.
-6. Ambil screenshot **langsung dari browser dan VS Code** untuk melengkapi laporan praktikum.
+3. Coba semua menu navigasi.
+4. Uji validasi dasar form Contact.
+5. Periksa tampilan pada ukuran layar berbeda.
+6. Validasi HTML melalui https://validator.w3.org/nu/.
 
-## Langkah 12 — Validasi HTML
+## Langkah 17 — Repository GitHub
 
-Validasi setiap dokumen HTML menggunakan W3C Nu HTML Checker: https://validator.w3.org/nu/
-
-Periksa file `lab4_box.html`, `lab4_layout/home.html`, `artikel.html`, `about.html`, dan `kontak.html`. Jika validator menampilkan error, perbaiki lalu periksa kembali.
-
-## Langkah 13 — Repository GitHub dan Commit
-
-1. Buat repository baru bernama `Lab4Web` di GitHub.
-2. Buka terminal VS Code di dalam folder project.
-3. Jalankan perintah berikut:
+Buat repository `Lab4Web`, lalu jalankan perintah berikut dari terminal di folder project:
 
 ```bash
 git init
@@ -145,14 +119,8 @@ git add .
 git commit -m "Praktikum 4 CSS Layout"
 ```
 
-4. Hubungkan folder lokal ke repository GitHub sesuai URL repository yang dibuat, kemudian lakukan `git push`.
-5. Pastikan `README.md`, file HTML, CSS, dan folder `screenshots` ikut terunggah.
-6. Kirim URL repository ke e-learning sesuai instruksi dosen.
+Hubungkan ke repository GitHub yang dibuat dan lakukan `git push`. Pastikan file HTML/CSS, README, dan folder screenshot ikut terunggah.
 
 ## Kesimpulan
 
-Praktikum ini melatih penggunaan box element, `float`, `clear`, elemen semantik HTML5, dan penyusunan layout website yang terdiri dari header, navigasi, hero, konten, sidebar, dan footer. Tugas pengembangan juga mencakup halaman About dan Contact.
-
-## Catatan Screenshot
-
-Gambar kode pada folder `screenshots` adalah ilustrasi potongan kode yang dirapikan. Gambar pada `screenshots/hasil-browser/` adalah pratinjau halaman yang dirender dari file project untuk memperlihatkan hasil layout; gambar tersebut bukan foto/screenshot asli dari layar komputer pengguna. Jika dosen meminta bukti praktikum asli, tambahkan screenshot langsung dari browser dan VS Code sebelum mengumpulkan laporan.
+Praktikum melatih penggunaan box element, `float`, `clear`, HTML semantik, layout website, sidebar widget, footer, konten artikel, serta halaman About dan Contact.
