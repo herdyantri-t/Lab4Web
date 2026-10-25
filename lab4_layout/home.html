@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <header><h1>Layout Sederhana</h1></header>
+  <nav aria-label="Navigasi utama">
+    <a class="active" href="home.html">Home</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="about.html">About</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+  <section id="hero">
+    <h1>Hello World!</h1>
+    <p>Selamat datang di website praktikum CSS Layout. Halaman ini dibuat untuk mempraktikkan semantic HTML, CSS float, box element, dan pembuatan layout sederhana.</p>
+    <a href="about.html" class="btn btn-large">Kenali saya »</a>
+  </section>
+  <section id="wrapper">
+    <main id="main">
+      <div class="row">
+        <div class="box">
+          <img src="https://dummyimage.com/120/db7d25/fff.png&text=Web" alt="Ilustrasi web" class="image-circle">
+          <h3>Web Design</h3>
+          <p>Menyusun tampilan web yang rapi, mudah dipahami, dan nyaman digunakan.</p>
+          <a href="artikel.html" class="btn btn-default">Lihat detail</a>
+        </div>
+        <div class="box">
+          <img src="https://dummyimage.com/120/3e73e6/fff.png&text=CSS" alt="Ilustrasi CSS" class="image-circle">
+          <h3>CSS Layout</h3>
+          <p>Memahami box model, float, clear, serta pengaturan posisi elemen.</p>
+          <a href="artikel.html" class="btn btn-default">Lihat detail</a>
+        </div>
+        <div class="box">
+          <img src="https://dummyimage.com/120/71cfc4/fff.png&text=HTML" alt="Ilustrasi HTML" class="image-circle">
+          <h3>HTML Semantik</h3>
+          <p>Menggunakan header, nav, main, article, aside, dan footer dengan tepat.</p>
+          <a href="artikel.html" class="btn btn-default">Lihat detail</a>
+        </div>
+      </div>
+      <hr class="divider">
+      <article class="entry">
+        <h2>Mengenal CSS Layout</h2>
+        <img src="https://dummyimage.com/150/7b8a70/fff.png&text=Layout" alt="Ilustrasi layout">
+        <p>CSS Layout membantu mengatur posisi dan ukuran elemen pada halaman web. Pada praktikum ini, layout disusun dengan semantic HTML dan CSS float. Properti clear digunakan agar elemen berikutnya tidak berada di samping elemen yang masih mengambang.</p>
+      </article>
+      <hr class="divider">
+      <article class="entry">
+        <h2>Mengapa HTML Semantik Penting?</h2>
+        <img src="https://dummyimage.com/150/7b8a70/fff.png&text=Semantic" alt="Ilustrasi HTML semantik" class="right-img">
+        <p>Elemen semantik menjelaskan fungsi setiap bagian halaman. Struktur yang jelas membantu pemeliharaan kode, aksesibilitas, dan pemahaman dokumen oleh browser maupun teknologi pendukung.</p>
+      </article>
+    </main>
+    <aside id="sidebar">
+      <div class="widget-box">
+        <h3 class="title">Widget Header</h3>
+        <ul>
+          <li><a href="artikel.html">Pengantar CSS</a></li>
+          <li><a href="artikel.html">Box Element</a></li>
+          <li><a href="artikel.html">Float dan Clear</a></li>
+          <li><a href="about.html">Tentang Saya</a></li>
+          <li><a href="kontak.html">Hubungi Saya</a></li>
+        </ul>
+      </div>
+      <div class="widget-box">
+        <h3 class="title">Widget Text</h3>
+        <p>Website praktikum ini merupakan latihan pembuatan layout menggunakan HTML5 dan CSS.</p>
+      </div>
+    </aside>
+  </section>
+  <footer><p>&copy; 2026 - Lab4Web | Praktikum Pemrograman Web</p></footer>
+</div>
+</body>
+</html>

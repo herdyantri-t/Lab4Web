@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel - Layout Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <header><h1>Artikel</h1></header>
+  <nav aria-label="Navigasi utama">
+    <a href="home.html">Home</a><a class="active" href="artikel.html">Artikel</a>
+    <a href="about.html">About</a><a href="kontak.html">Kontak</a>
+  </nav>
+  <section id="hero"><h1>Artikel Praktikum</h1><p>Catatan singkat mengenai materi CSS Layout.</p></section>
+  <section id="wrapper" class="single-column">
+    <main id="main">
+      <article class="entry">
+        <h2>Box Model CSS</h2>
+        <p>Setiap elemen HTML dapat dipahami sebagai kotak yang terdiri dari content, padding, border, dan margin. Pengaturan keempat bagian ini memengaruhi ukuran serta jarak elemen.</p>
+      </article>
+      <hr class="divider">
+      <article class="entry">
+        <h2>Float dan Clear</h2>
+        <p>Properti float memungkinkan elemen mengalir ke sisi kiri atau kanan. Properti clear mengatur agar elemen tidak ditempatkan di samping elemen yang sedang mengambang.</p>
+      </article>
+      <hr class="divider">
+      <article class="entry">
+        <h2>Semantic HTML</h2>
+        <p>Elemen seperti header, nav, main, article, aside, dan footer memberi makna pada struktur halaman sehingga kode lebih mudah dibaca dan dikelola.</p>
+      </article>
+    </main>
+  </section>
+  <footer><p>&copy; 2026 - Lab4Web | Praktikum Pemrograman Web</p></footer>
+</div>
+</body>
+</html>

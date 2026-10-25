@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Layout Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <header><h1>About</h1></header>
+  <nav aria-label="Navigasi utama">
+    <a href="home.html">Home</a><a href="artikel.html">Artikel</a>
+    <a class="active" href="about.html">About</a><a href="kontak.html">Kontak</a>
+  </nav>
+  <section id="hero">
+    <h1>Tentang Saya</h1>
+    <p>Halaman profil singkat untuk memenuhi tugas menu About pada Praktikum 4: CSS Layout.</p>
+  </section>
+  <section id="wrapper" class="single-column">
+    <main id="main">
+      <article class="entry">
+        <h2>Profil</h2>
+        <p>Saya adalah mahasiswa yang sedang mempelajari pemrograman web, khususnya HTML5 semantik dan CSS untuk membangun layout halaman yang terstruktur.</p>
+        <h2>Keahlian yang Dipelajari</h2>
+        <ul class="profile-list">
+          <li>Struktur dokumen HTML</li><li>CSS box model dan float</li>
+          <li>Semantic elements</li><li>Desain halaman responsif</li>
+        </ul>
+        <h2>Portfolio Praktikum</h2>
+        <div class="portfolio-grid">
+          <div><h3>Box Element</h3><p>Contoh float dan clear.</p></div>
+          <div><h3>Layout Web</h3><p>Header, navigasi, konten, sidebar, dan footer.</p></div>
+          <div><h3>Form Kontak</h3><p>Formulir HTML dengan validasi dasar.</p></div>
+        </div>
+      </article>
+    </main>
+  </section>
+  <footer><p>&copy; 2026 - Lab4Web | Praktikum Pemrograman Web</p></footer>
+</div>
+</body>
+</html>
